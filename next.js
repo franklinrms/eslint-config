@@ -24,7 +24,6 @@ module.exports = {
   ],
   rules: {
     'prettier/prettier': ["error", {
-      'plugins': ['prettier-plugin-tailwindcss'],
       'printWidth': 80,
       'tabWidth': 2,
       'singleQuote': true,
