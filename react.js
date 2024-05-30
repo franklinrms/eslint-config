@@ -22,11 +22,13 @@ module.exports = {
   plugins: [
     'react',
     'jsx-a11y',
-    '@typescript-eslint'
+    '@typescript-eslint',
+    'simple-import-sort'
   ],
   rules: {
     "react/self-closing-comp": "error",
     'prettier/prettier': ["error", {
+      'plugins': ['prettier-plugin-tailwindcss'],
       'printWidth': 80,
       'tabWidth': 2,
       'singleQuote': true,
@@ -50,6 +52,7 @@ module.exports = {
     'jsx-a11y/role-has-required-aria-props': 'warn',
     'jsx-a11y/role-supports-aria-props': 'warn',
     'react/no-unknown-property': 'error',
+    'simple-import-sort/imports': 'error',
   },
   settings: {
     react: {
