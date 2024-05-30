@@ -6,6 +6,7 @@
 - React plugin;
 - React Hooks plugin;
 - JSX a11y plugin;
+- Simple import sort plugin;
 - Prettier;
 
 ## Setup
@@ -14,7 +15,7 @@
 
 Install dependencies:
 ```
-npm i -D eslint @franklinrms/eslint-config
+npm i -D eslint @franklinrms/eslint-config prettier-plugin-tailwindcss
 ```
 Inside `.eslintrc.json`
 ```
@@ -26,17 +27,35 @@ Inside `.eslintrc.json`
 }
 ```
 
+Inside `package.json`
+```
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
+  }
+```
+
 ### React (without Next.js)
 
 Install dependencies:
 ```
-npm i -D eslint @franklinrms/eslint-config
+npm i -D eslint @franklinrms/eslint-config prettier-plugin-tailwindcss
 ```
 Inside `.eslintrc.json`
 ```
 {
   "extends": "@franklinrms/eslint-config/react"
 }
+```
+
+Inside `package.json`
+```
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
+  }
 ```
 
 ### Node.js
